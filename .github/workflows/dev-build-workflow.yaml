@@ -95,7 +95,7 @@ jobs:
       runs-on: ubuntu-latest
       environment: 
         name: dev
-        url: https://github.com/yodpiya10/yod-tutorial-pipeline/actions/workflows/dev-tutorial-backend-deploy.yml
+        url: https://github.com/yodpiya10/yod-tutorial-pipeline/actions/workflows/dev-tutorial-frontend-deploy.yml
       needs: [unitest,analyze] # if on env sit don't use
         
       steps:
@@ -124,5 +124,5 @@ jobs:
         with:
           token: ${{ secrets.REPO_ACCESS_TOKEN }}
           repository: yodpiya10/yod-tutorial-pipeline
-          event-type: yod-tutorial-backend-cd-dev
+          event-type: yod-tutorial-frontend-cd-dev
           client-payload: '{"ref": "${{ github.ref }}", "sha": "${{ github.sha }}"}'
