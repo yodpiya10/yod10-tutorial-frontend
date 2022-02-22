@@ -11,7 +11,7 @@ on:
       - develop
 
 env:
-  APP_NAME: yod-tutorial-frontend
+  APP_NAME: yod10-tutorial-frontend
   CONTAINER_REPOSITORY: "acryodtutorial001.azurecr.io"
   IMAGE_TAG: "0.0.1-SNAPSHOT"
 
